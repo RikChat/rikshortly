@@ -52,6 +52,22 @@ Users should be able to:
 - Babel transpiler (old browser support)
 - Parcel Package Bundler
 
+### Development
+
+```
+npm install -g parcel-bundler
+```
+
+```
+npm run dev
+```
+
+### Production
+
+```
+npm run build
+```
+
 Fetching URL Code snippets, see below:
 
 ```js
