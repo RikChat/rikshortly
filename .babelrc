@@ -4,7 +4,7 @@
             "modules": false,
             "useBuiltIns": "usage",
             "corejs": false,
-            "targets": "ie >= 8"
+            "targets": "ie >= 8" 
         }]
     ],
     "plugins": [
