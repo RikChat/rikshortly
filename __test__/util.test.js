@@ -7,5 +7,5 @@ test("GET URL", () => {
 });
 
 test("GET URL", () => {
-  expect(getShortURL("www.abc.com"));
+  expect(getShortURL("https://www.abc.com"));
 });
