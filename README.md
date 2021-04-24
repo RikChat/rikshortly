@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://shortly.vercel.app/)
+- Live Site URL: [shortly](https://shortly.vercel.app/)
 
 ## My process
 
@@ -73,7 +73,7 @@ build ready code, connecting to kanban for issue tracking.
 
 ### Useful resources
 
-- [Example resource 1](https://dev.to/deepaksisodiya/5-best-practices-for-clean-coding-in-javascript-26am) - This is an amazing article which helped me finally understand writing clean javascript code. I'd recommend it to anyone still learning this concept.
+- [Clean JavaScript Code](https://dev.to/deepaksisodiya/5-best-practices-for-clean-coding-in-javascript-26am) - This is an amazing article which helped me finally understand writing clean javascript code. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
