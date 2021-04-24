@@ -6,7 +6,7 @@
   "author": "blogtheorem",
   "license": "ISC",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "concat": "concat -o ./src/css/output.css ./src/css/style.css ./src/css/home.css ./src/css/header.css ./src/css/container.css ./src/css/statistics.css ./src/css/footer.css ./src/css/bottom.css",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --out-dir prod"
