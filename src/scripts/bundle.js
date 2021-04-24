@@ -11,9 +11,6 @@
  * HANDLE ERRORS
  */
 
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-
 let urlArray = [];
 let clipboard = new ClipboardJS(".copy");
 
@@ -75,8 +72,7 @@ const displayData = () => {
 
 // 1. ONLOAD
 window.addEventListener("load", (event) => {
-  console.log("Page Initializated ✔");
-  AOS.init({ duration: 1000 });
+  AOS.init({ duration: 1000, once: true });
   displayData();
 });
 
