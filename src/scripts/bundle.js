@@ -1,4 +1,4 @@
-// URL SHORTNER - shrtcode API
+// shortly - URL SHORTNER - shrtcode API
 
 /*
  * LOAD AND INITIALIZE
