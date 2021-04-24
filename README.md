@@ -52,6 +52,16 @@ Users should be able to:
 - Babel transpiler (old browser support)
 - Parcel Package Bundler
 
+Fetching URL Code snippets, see below:
+
+```js
+const getShortURL = async (url) => {
+  const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
+  const data = await response.json();
+  return data;
+};
+```
+
 ### Development
 
 ```
@@ -66,16 +76,6 @@ npm run dev
 
 ```
 npm run build
-```
-
-Fetching URL Code snippets, see below:
-
-```js
-const getShortURL = async (url) => {
-  const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
-  const data = await response.json();
-  return data;
-};
 ```
 
 ### Continued development
