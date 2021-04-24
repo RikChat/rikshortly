@@ -3766,7 +3766,7 @@ var _regenerator = _interopRequireDefault(require("@babel/runtime-corejs3/regene
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// URL SHORTNER - shrtcode API
+// shortly - URL SHORTNER - shrtcode API
 
 /*
  * LOAD AND INITIALIZE
@@ -3956,7 +3956,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56109" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
