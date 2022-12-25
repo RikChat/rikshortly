@@ -4,17 +4,19 @@ Get short URL instant, use shortly shorten and replace long URL to short link.
 
 ## Table of contents
 
+- [Shortly - URL shortner](#shortly---url-shortner)
+- [Table of contents](#table-of-contents)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Development](#development)
+  - [Production](#production)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,11 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![shortly-URL-Shortner](https://user-images.githubusercontent.com/6918020/115962105-5ef79400-a537-11eb-8c22-7acfca6d49dd.png)
-
-### Planning
-
-![IMG_20210424_200048](https://user-images.githubusercontent.com/6918020/115962219-e3e2ad80-a537-11eb-9ebb-56e66593673b.jpg)
+![shortly-URL-Shortner](https://user-images.githubusercontent.com/6918020/209463823-3c6feab4-db1c-4657-a0e2-b9b8203468ce.png)
 
 ### Links
 
@@ -49,8 +47,6 @@ Users should be able to:
 - CSS custom properties
 - Vanilla JavaScript
 - REST API
-- Babel transpiler (old browser support)
-- Parcel Package Bundler
 
 Fetching URL Code snippets, see below:
 
@@ -60,6 +56,15 @@ const getShortURL = async (url) => {
   const data = await response.json();
   return data;
 };
+```
+
+QRCode.js
+
+```js
+<div id="qrcode"></div>
+<script type="text/javascript">
+new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+</script>
 ```
 
 ### Development
