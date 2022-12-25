@@ -50,7 +50,7 @@ const displayData = (result) => {
   div.innerHTML = html;
   container.appendChild(div);
   let qrcode = new QRCode("qrcode", {
-    text: truncate(result.original_link),
+    text: result.full_short_link,
     width: 200,
     height: 200,
     colorDark: "#000000",
