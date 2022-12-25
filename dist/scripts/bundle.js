@@ -28,6 +28,7 @@ const truncate = (str) => {
 
 const displayData = (result) => {
   let div = document.createElement("div");
+  console.log(result);
   div.classList.add("container__result-each");
   let html = `
       <div class="original">
@@ -37,7 +38,7 @@ const displayData = (result) => {
       <div class="short">
         <p class="short__url">${result.full_short_link}</p>
         <button aria-label="Copy" data-clipboard-text=${
-          result.full_short_links
+          result.full_short_link
         } class="btn-secondary copy">Copy URL</button>
         <a id="downloadQR">
             <button aria-label="Copy" class="btn-secondary downloadQR" id='saveQR'onClick=DownloadQR()>Save QR</button>
