@@ -1,0 +1,88 @@
+/* HEADER */
+
+header {
+  margin-top: 30px;
+}
+
+header .row,
+.header__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__left ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__left ul li,
+.header__right button {
+  margin-left: 30px;
+}
+
+.header__left ul li,
+.header__right a {
+  opacity: 0.5;
+}
+
+.header__left ul li:hover,
+.header__right a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger__container {
+  display: none;
+}
+
+@media only screen and (max-width: 780px) {
+  .header__left ul,
+  .header__right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .hamburger__container {
+    text-align: center;
+    background: var(--violet);
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .active {
+    display: block;
+    z-index: 5;
+  }
+
+  .hamburger__container a {
+    color: white;
+    opacity: 1;
+  }
+
+  .hamburger__container-top li,
+  .hamburger__container-bottom div {
+    margin: 20px 0;
+  }
+
+  hr {
+    background: var(--gray);
+    outline: none;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+}
