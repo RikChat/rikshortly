@@ -6,12 +6,11 @@ const trash = document.getElementById("delete");
 const inputField = document.getElementById("inputField");
 const warning = document.querySelector(".warning");
 const container = document.getElementsByClassName("container__result")[0];
-const urlRegex =
-  /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi;
-
 const hamburger = document.querySelector(".hamburger");
 const hamburger__container = document.querySelector(".hamburger__container");
 let hamburger__toggle = true;
+const urlRegex =
+  /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi;
 
 const getShortURL = async (url) => {
   const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
@@ -30,7 +29,6 @@ const truncate = (str) => {
 const displayData = (result) => {
   let div = document.createElement("div");
   div.classList.add("container__result-each");
-
   let html = `
       <div class="original">
         <div id="qrcode"></div>
@@ -50,7 +48,6 @@ const displayData = (result) => {
 
   div.innerHTML = html;
   container.appendChild(div);
-
   let qrcode = new QRCode("qrcode", {
     text: truncate(result.original_link),
     width: 200,
@@ -80,7 +77,6 @@ window.addEventListener("load", (event) => {
 btn.addEventListener("click", () => {
   let urlValue = inputField.value;
   warning.style.display = "none";
-  inputField.style.border = "none";
 
   if (urlValue.match(urlRegex)) {
     btn.textContent = "Loading ...";
