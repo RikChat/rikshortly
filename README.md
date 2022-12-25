@@ -12,8 +12,6 @@ Get short URL instant, use shortly shorten and replace long URL to short link.
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Development](#development)
-  - [Production](#production)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -65,22 +63,6 @@ QRCode.js
 <script type="text/javascript">
 new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
 </script>
-```
-
-### Development
-
-```
-npm install -g parcel-bundler
-```
-
-```
-npm run dev
-```
-
-### Production
-
-```
-npm run build
 ```
 
 ### Continued development
