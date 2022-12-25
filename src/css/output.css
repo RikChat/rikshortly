@@ -16,6 +16,7 @@
 
 :root {
   --primary: hsl(180, 66%, 49%);
+  --primary-dark: hsl(180, 85%, 31%);
   --violet: hsl(257, 27%, 26%);
   --secondary: hsl(0, 87%, 67%);
 
@@ -39,8 +40,8 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
   font-weight: 700;
+  color: black;
 }
 
 .row {
@@ -67,6 +68,7 @@ a {
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  width: 150px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -254,7 +256,7 @@ header .row,
   padding: 55px 0;
   background: var(--violet);
   background-size: cover;
-  background-image: url("/assets/images/bg-shorten-desktop.svg");
+  background-image: url("../assets/images/bg-shorten-desktop.svg");
   background-position: center;
 }
 
@@ -276,13 +278,14 @@ header .row,
   padding: 15px;
   margin-right: 20px;
   border-radius: 5px;
-  border: 2px solid transparent;
+  outline: none;
+  border: 2px solid transparent !important;
 }
 
 /* RESULT */
 
 .container__result-each {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -291,7 +294,14 @@ header .row,
 }
 
 .original {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 25px;
+}
+
+.original__url {
+  margin-left: 10px;
 }
 
 .short {
@@ -303,7 +313,7 @@ header .row,
 }
 
 .short__url {
-  color: var(--primary);
+  color: var(--primary-dark);
   margin-right: 10px;
 }
 
@@ -324,7 +334,16 @@ header .row,
   color: white;
 }
 
-@media only screen and (max-width: 780px) {
+.downloadQR {
+  margin-left: 10px;
+}
+
+.downloadQR:disabled {
+  background-color: rgb(182, 182, 182);
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 890px) {
   .container .row {
     margin-top: 20px;
   }
@@ -360,6 +379,11 @@ header .row,
   .original {
     border-bottom: 1px solid var(--darkblue);
     width: 100%;
+    flex-direction: column;
+  }
+
+  .original__url {
+    margin-top: 20px;
   }
 
   .container__result button {
@@ -380,6 +404,14 @@ header .row,
   .warning {
     bottom: 12px;
     left: 20px;
+  }
+
+  #downloadQR {
+    width: 100%;
+  }
+
+  .downloadQR {
+    margin-left: 0px;
   }
 }
 
@@ -477,7 +509,7 @@ header .row,
   left: 10%;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 890px) {
   .statistics {
     padding: 0;
   }
@@ -558,12 +590,18 @@ footer .row li a:hover {
 .credit {
   text-align: center;
   padding: 10px;
-  background: var(--gray);
+  background: black;
   font-size: 12px;
-  opacity: 0.8;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.credit a {
+  color: white;
 }
 
 .blogtheorem {
@@ -589,7 +627,7 @@ footer .row li a:hover {
 
 .bottom {
   background-color: var(--violet);
-  background-image: url("/assets/images/bg-boost-desktop.svg");
+  background-image: url("../assets/images/bg-boost-desktop.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
