@@ -9,7 +9,8 @@
     "test": "jest",
     "concat": "concat -o ./src/css/output.css ./src/css/style.css ./src/css/home.css ./src/css/header.css ./src/css/container.css ./src/css/statistics.css ./src/css/footer.css ./src/css/bottom.css",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir prod"
+    "build": "parcel build ./src/index.html --out-dir prod",
+    "start": "parcel serve ./src/index.html"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
